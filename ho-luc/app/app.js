@@ -44,3 +44,14 @@ app.directive('haikuDirective', function() {
     templateUrl: '/templates/haiku.html'
   }
 })
+
+app.directive('transcludeDirective', function() {
+  return {
+    restrict: 'A',
+    transclude: true,
+    scope: {
+      transcludeDirective: '='
+    },
+    template: '<br><p><ng-transclude></ng-transclude> {{transcludeDirective}} </p>'
+  }
+})
