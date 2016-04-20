@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Angular Directives</title>
+  </head>
+  <body>
+    <section>
+      <my-nav-bar></my-nav-bar>
+    </section ng-controller="myController">
+    <main>
+      <story-to-tell></story-to-tell>
+
+      <dog-custom-directive name="'Pruto'" age=100 hobby="'fetching tree branch'"></dog-custom-directive>
+
+      <clickable></clickable>
+
+      <section take-form-data></section>
+    </main>
+    <script src="./bundle.js" type="text/javascript"></script>
+  </body>
+</html>
