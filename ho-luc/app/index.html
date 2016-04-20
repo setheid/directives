@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>My first directives</title>
+  </head>
+  <body>
+    <ul>
+      <li navbar-directive>Home</li>
+      <li navbar-directive>Stuff</li>
+    </ul>
+
+
+    <message-directive name="'sam'" says="'yo dawg'"></message-directive>
+    <message-directive name="'luc'" says="'yo cat'"></message-directive>
+
+    <cool-directive></cool-directive>
+
+    <haiku-directive></haiku-directive>
+    <script src="./build/bundle.js"></script>
+  </body>
+</html>
