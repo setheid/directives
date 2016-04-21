@@ -1,0 +1,15 @@
+<section loggedin="loggedin" coffees="coffees" data-ng-show="loggedin">
+  <h1>Welcome {{name}}</h1>
+  <h3>Overview</h3>
+  <p>
+    Here is an overview of your coffee notes. Edit or add a new coffee.
+  </p>
+  <article data-ng-repeat="coffee in coffees">
+    <h3>{{coffee.name}}</h3>
+    <stars></stars>
+    <h4>Review</h4>
+    <p>{{coffee.review}}</p>
+    <h4>Tasting Notes</h4>
+    <p>{{coffee.notes}}</p>
+  </article>
+</section>
