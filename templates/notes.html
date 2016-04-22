@@ -1,0 +1,16 @@
+<section loggedin="loggedin" coffees="coffees" data-ng-show="loggedin">
+  <h1>Add a Coffee</h1>
+  <form>
+    <ul>
+      <li>Coffee Name:</li>
+      <li><input data-ng-model="coffee.name"></li>
+      <li>Your Impressions:</li>
+      <li><input data-ng-model="coffee.review"></li>
+      <li>Tasting Notes:</li>
+      <li><input data-ng-model="coffee.notes"></li>
+      <li>Stars</li>
+      <stars></stars>
+      <li><button data-ng-click="addReview(coffees, coffee)">Submit</button></li>
+    </ul>
+  </form>
+</section>

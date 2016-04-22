@@ -1,0 +1,7 @@
+<span coffee="coffee">
+  <i ng-class="{'fa fa-star-o': coffee.stars == 0, 'fa fa-star': coffee.stars >= 1}"></i>
+  <i ng-class="{'fa fa-star-o': coffee.stars <= 1, 'fa fa-star': coffee.stars >= 2}"></i>
+  <i ng-class="{'fa fa-star-o': coffee.stars <= 2, 'fa fa-star': coffee.stars >= 3}"></i>
+  <i ng-class="{'fa fa-star-o': coffee.stars <= 3, 'fa fa-star': coffee.stars >= 4}"></i>
+  <i ng-class="{'fa fa-star-o': coffee.stars <= 4, 'fa fa-star': coffee.stars == 5}"></i>
+</span>

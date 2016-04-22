@@ -62,14 +62,6 @@ app.directive('notes', () => {
         coffees.push(newCoffee);
       }
     }
-    // link: function($scope, element, attrs) {
-    //   element.find('i').bind("click", function(e){
-    //     var num = $(this).index() + 1;
-    //     $scope.$apply(function() {
-    //       $scope.coffee.stars = num;
-    //     });
-    //   });
-    // }
   }
 });
 
